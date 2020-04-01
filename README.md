@@ -37,7 +37,7 @@ AVG current ≈ 80mA
 
 ## TPH senor
 
-![](./img/BME280.png)
+![](./img/BME280.PNG)
 
 ### Values datasheet
 
