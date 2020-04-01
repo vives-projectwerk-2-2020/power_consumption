@@ -7,7 +7,7 @@ This is a repository where we put information about how much energy every sensor
 
 ### Values datasheet
 
-![](img/datasheetParticleSenor.png)
+![](./img/datasheetParticleSenor.PNG)
 
 In de datasheet vinden we terug dat de nominale stroom maximaal 70mA mag zijn. In sleepmode verbruikt de sensor minder dan 4mA.
 
@@ -15,7 +15,7 @@ In de datasheet vinden we terug dat de nominale stroom maximaal 70mA mag zijn. I
 
 Meetopstelling:
 
-![](img/practicalParticleSenor.png)
+![](./img/practicalParticleSenor.PNG)
 
 #### Gemiddelde stroomverbruik zonder sleepmode
 
