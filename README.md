@@ -41,7 +41,7 @@ AVG current ≈ 80mA
 
 ### Values datasheet
 
-![](img/datasheetBME280.png)
+![](./img/datasheetBME280.PNG)
 
 ### Practical
 
