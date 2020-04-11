@@ -7,12 +7,11 @@ This is a repository where we put information about how much energy every sensor
 
 ### Powerconsumption SDS011
 
-|   |   |   |   |   |   |   |   |
+|Technical Parameters   |   |Practical   |   |
 |---|---|---|---|---|---|---|---|
-|Technical Parameters |   |   |   |Practical   |   |   |
-|Rated voltage:   |5V   |   |   |Rated voltage:   |5V   |   |
-|Rated Current:   |70mA±10mA  |   |   |Rated Current:   |91,5mA   |   |
-|Sleep Current:   |<4 mA   |   |   |Sleep Current:   |5mA   |   |
+|Rated voltage:   |5V   |Rated voltage:   |5V   |   |
+|Rated Current:   |70mA±10mA  |Rated Current:   |91,5mA   |   |
+|Sleep Current:   |<4 mA   |Sleep Current:   |5mA   |   |
 
 
 
@@ -24,7 +23,7 @@ Meetopstelling:
 
 ### measure results
 
-![](./img/INandOUTsleep.PNG)
+![](./img/INandOUTsleep.png)
 
 ## TPH senor
 
