@@ -21,9 +21,10 @@ Meetopstelling:
 
 ![](./img/practicalParticleSenor.PNG)
 
+
 ### measure results
 
-![](img/INandOUTsleep.png =826x632)
+![](img/rsz_test.png )
 
 ## TPH senor
 
