@@ -23,7 +23,7 @@ Meetopstelling:
 
 ### measure results
 
-![](./img/INandOUTsleep.png)
+![](img/INandOUTsleep.png)
 
 ## TPH senor
 
