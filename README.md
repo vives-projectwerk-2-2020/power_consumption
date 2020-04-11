@@ -30,13 +30,23 @@ measurement setup:
 We see that the red graph consumes a power of 5,8 mWh.
 The green graph consumes a power of 1,77 mWh. this is 70% less.
 
+|   |1 hour   |1 day   |1 Week   |2 weeks   |
+|---|---|---|---|---|
+|Without sleepmode   |348mWh|8352mWh|58464mWh|116,9Wh|
+|with sleepmode   |106mWh|2548,8mWh|17841mWh|35,7Wh|
+
+
 ## TPH senor
 
 ![](./img/BME280.PNG)
 
-### Values datasheet
+### Powerconsumption BME280
 
-![](./img/datasheetBME280.PNG)
+|Technical Parameters   |   |Practical   |   |
+|---|---|---|---|
+|Rated voltage:   |3V   |Rated voltage:   |3V   |
+|Idd normal:   |94,9µA |Idd normal:   |445µA   |
+|Sleep Current:   |0,1µA  |Sleep Current:   |419µA  |
 
 ### Practical
 
@@ -45,11 +55,6 @@ The green graph consumes a power of 1,77 mWh. this is 70% less.
 ![](img/BME280Powerconsumtion.png)
 
 AVG current ≈ 438µA
-
-
-## Total AVG current
-
-70mA+483µA = 70,483mA
 
 
 
