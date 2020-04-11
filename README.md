@@ -5,11 +5,16 @@ This is a repository where we put information about how much energy every sensor
 
 ![](img/particleSensor.png)
 
-### Values datasheet
+### Powerconsumption SDS011
 
-![](./img/datasheetParticleSenor.PNG)
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+|Technical Parameters |   |   |   |Practical   |   |   |
+|Rated voltage:   |5V   |   |   |Rated voltage:   |5V   |   |
+|Rated Current:   |70mA±10mA  |   |   |Rated Current:   |91,5mA   |   |
+|Sleep Current:   |<4 mA   |   |   |Sleep Current:   |5mA   |   |
 
-In de datasheet vinden we terug dat de nominale stroom maximaal 70mA mag zijn. In sleepmode verbruikt de sensor minder dan 4mA.
+
 
 ### Practical
 
@@ -17,23 +22,9 @@ Meetopstelling:
 
 ![](./img/practicalParticleSenor.PNG)
 
-#### Gemiddelde stroomverbruik zonder sleepmode
+### measure results
 
-![](img/particle10s.png)
-
-![](img/particle20s.png)
-
-AVG current ≈ 70mA
-
-#### Gemiddelde stroomverbruik met sleepmode
-
-![](img/particleInSleemode.png)
-
-AVG current ≈ 5mA
-
-![](img/particleUitSleepmode.png)
-
-AVG current ≈ 80mA
+![](./img/INandOUTsleep.PNG)
 
 ## TPH senor
 
