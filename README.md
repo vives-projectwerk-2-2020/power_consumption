@@ -45,8 +45,11 @@ The green graph consumes a power of 1,77 mWh. this is 70% less.
 |Technical Parameters   |   |Practical   |   |
 |---|---|---|---|
 |Rated voltage:   |3V   |Rated voltage:   |3V   |
-|Idd normal:   |94,9µA |Idd normal:   |445µA   |
-|Sleep Current:   |0,1µA  |Sleep Current:   |419µA  |
+|I during  temperature measurement   |350µA |I during temperature   |440µA   |
+|I during pressure measurement   |714µA |I during pressure measurement   |427µA   |
+|I during humidity measurement   |340µA |I during humidity measurement   |671µA   |
+|Standby current:   |0,1-0,5µA |Standby current:   |419µA   |
+|Sleep Current:   |0,1µA  |Sleep Current:   |?  |
 
 ### Practical
 
