@@ -47,17 +47,49 @@ The green graph consumes a power of 1,77 mWh. this is 70% less.
 |Rated voltage:   |3V   |Rated voltage:   |3V   |
 |I during  temperature measurement   |350µA |I during temperature   |440µA   |
 |I during pressure measurement   |714µA |I during pressure measurement   |427µA   |
-|I during humidity measurement   |340µA |I during humidity measurement   |671µA   |
+|I during humidity measurement   |340µA |I during humidity measurement   |671µA (strange!!)   |
 |Standby current:   |0,1-0,5µA |Standby current:   |419µA   |
 |Sleep Current:   |0,1µA  |Sleep Current:   |?  |
 
 ### Practical
+measurement setup:
 
-![](img/BME20ValueMeting.png)
+### measure results
 
 ![](img/BME280Powerconsumtion.png)
 
-AVG current ≈ 438µA
+We see that one cycle of the sensor 1,10µWh uses.
+The program that now runs on the nucleo is the normal mode function. 
+
+Each cycle lasts approximately 2,70s.
+
+|   |1 hour   |1 day   |1 Week   |2 weeks   |
+|---|---|---|---|---|
+|Program in normal mode   |1466,6µWh|35,2mWh|246,4mWh|492,8mWh|
+|Program with sleep mode   |?|?|?|?|
+
+
+## Lorawan
+### Powerconsumption lorawan
+### Practical
+measurement setup:
+
+### measure results
+
+![](img/powerMeasurementLorawan.PNG)
+
+|   |1 hour   |1 day   |1 Week   |2 weeks   |
+|---|---|---|---|---|
+|Lorawan   |3025,7µWh|72,6mWh|508,3mWh|1016,6mWh|
+
+## Total sum
+
+the total energy that will be needed for two weeks is 37,2Wh.
+
+## which battery?
+
+Total hours = 336h
+Total 
 
 
 
