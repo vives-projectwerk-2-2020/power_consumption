@@ -47,8 +47,8 @@ The green graph consumes a power of 1,77 mWh. this is 70% less.
 |Rated voltage:   |3V   |Rated voltage:   |3V   |
 |I during  temperature measurement   |350µA |I during temperature   |440µA   |
 |I during pressure measurement   |714µA |I during pressure measurement   |427µA   |
-|I during humidity measurement   |340µA |I during humidity measurement   |671µA (strange!!)   |
-|Standby current:   |0,1-0,5µA |Standby current:   |419µA   |
+|I during humidity measurement   |340µA |I during humidity measurement   |671µA   |
+|Standby current:   |0,1-0,5µA |Standby current:   |419µA (strange!!)   |
 |Sleep Current:   |0,1µA  |Sleep Current:   |?  |
 
 ### Practical
