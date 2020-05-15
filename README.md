@@ -1,5 +1,11 @@
 # Particula powerconsumtion
-This is a repository where we put information about how much energy every sensor uses.
+The Particula project is about a Smart Self-Sufficient Open Wireless Air Quality Sensor. This IoT device makes use of a particle sensor, a tph sensor (temperature, pressure, humidity) and LoRaWAN to transmit the data.
+
+Of course this setup needs some power. Thats why we have a self-charging battery system with solar panels in place. But what if theres no sun for example, 2 weeks?
+
+Thats why we have to calculate exactly how much each measure-cycle consumes and add "sleep" times between these cycles so we can cover these 2 weeks.
+
+But how long should these sleep times take?
 
 ## Particle sensor
 
@@ -51,9 +57,6 @@ The green graph consumes a power of 1,77 mWh. this is 70% less.
 |Standby current:   |0,1-0,5µA |Standby current:   |419µA (strange!!)   |
 |Sleep Current:   |0,1µA  |Sleep Current:   |?  |
 
-### Practical
-measurement setup:
-
 ### measure results
 
 ![](img/BME280Powerconsumtion.png)
@@ -61,35 +64,36 @@ measurement setup:
 We see that one cycle of the sensor 1,10µWh uses.
 The program that now runs on the nucleo is the normal mode function. 
 
-Each cycle lasts approximately 2,70s.
+## Calulations
 
-|   |1 hour   |1 day   |1 Week   |2 weeks   |
-|---|---|---|---|---|
-|Program in normal mode   |1466,6µWh|35,2mWh|246,4mWh|492,8mWh|
-|Program with sleep mode   |?|?|?|?|
+The following values you can find in the Enery_Budget_Particla.xlsx file.
 
+These are the values we measured in one cycle not accounting sleepmode times, because the idea is we will change the sleepmode times depending on how long the battery(s) last.
 
-## Lorawan
-### Powerconsumption lorawan
-### Practical
-measurement setup:
+This took quite a while because not every subprocess takes the same amount of time.
 
-### measure results
+![](img/measurement_cycle.png)
 
-![](img/powerMeasurementLorawan.PNG)
+Good thing about the sleepmode, it isn't very hard to measure because the sleepmodes take the same amount of time.
 
-|   |1 hour   |1 day   |1 Week   |2 weeks   |
-|---|---|---|---|---|
-|Lorawan   |3025,7µWh|72,6mWh|508,3mWh|1016,6mWh|
+We did ran into a problem though, these are the power usages of each sleep mode but when measuring we saw a total of 27mA instead of 5,7mA. We assume the extra 21mA is from the flash and LED on the board that won't be on our end project.
 
-## Total sum
+Thats why in the next calculations we will disregard the 21mA.
 
-the total energy that will be needed for two weeks is 37,2Wh.
+![](img/Sleep_mode_values.png)
 
-## which battery?
+Here we present 7 scenarios of how long the cycles (active +  sleep) take. Only the sleep times are variable.
+![](img/7_scenerios.png)
 
-Total hours = 336h
-Total 
+We can see with one battery we can last about 2 weeks if the cycle (active+sleep) takes 60 minutes.
+
+![](img/1_battery.png)
+
+Of course of we add another battery, doubeling the budget we can see that with 2 batterys we can last about 2 weeks with a cycle time of 32 minutes!
+
+![](img/2_batterys.png)
+
+So the choice is up to the people who decide how many batterys to use, only got 1 battery? Make the sleep time in each cycle 3565.80s if you want to last 2 weeks. Got 2 batterys?  Make the sleep time in each cycle 1765.80s
 
 
 
